@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+
+	  <!-- Compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	  <!-- Compiled and minified JavaScript -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+          
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	  <title>KKJason</title>
+	  <style type="text/css">
+
+		body {
+			font-family: sans-serif;
+		}	  	
+	  /* navigation bar styles */
+
+	  .nav-wrapper{
+	  	background-color: #ef5350;
+	  }
+	  nav > .nav-wrapper > a {
+	  	color: white;
+	  }
+	  .hero-div{
+	  	border: 1px solid red;
+	  	min-height: 100vh;
+	  	color: white;
+	  	background-image: url("images/hero-img.png");
+	  	background-size: cover;
+	  	margin-bottom: 0;
+	  }
+
+	  .text-container{
+	  	margin-top: 80px;
+	  }
+	  /* bio-div styles */
+	  .bio{
+	  	font-size: 16px;
+	  	margin-top: 30px;
+	  	background-color: white;
+	  	color:black;
+
+	  	padding:10px 15px;
+	  	border-radius: 5px;
+	  	display: none;
+	  }
+	  	
+	  /* pulsing scroll arrow styles */
+	  .scroll-ring-div{
+	  	margin-top: 30px;
+	  	display: none;
+	  	padding-bottom: 20px;
+
+	  }
+
+	  .scroll-ring{
+
+	  	width:50px;
+	  	height: 50px;
+	  	margin: 0 auto;
+	  	border-radius: 50px;
+	  	background-color: transparent;
+	  	border:2px solid white;
+
+	  }
+	  .fa-arrow-down{
+	  	margin-top:12px;
+	  	font-size: 25px;
+	  	color: white;
+
+	  }
+
+	  .email-icon-div{
+	  	max-width: 200px;
+	  	max-height: 200px;
+	  	margin: 0 auto;
+	  }
+
+	  .info-2{
+	  	display: none;
+	  }
+
+	  .more-info-card1, .more-info-card2, .more-info-card3{
+	  	display: none;
+	  }
+
+	  .projects-row{
+	  	margin-bottom: 0;
+	  	min-height: 100vh;
+	  	background-color: #fafafa;
+	  }
+	 
+	 
+
+	  .skills-row{
+	  	min-height: 400px;
+	  }
+
+	  
+	  .back-btn-red {
+	  	display: none;
+	  	background-color: #1e88e5;
+	  }
+
+	  .back-btn-red:hover{
+	  	background-color: #42a5f5;
+	  }
+
+	  .view-btn1, .view-btn2, .view-btn3{
+	  	background-color: #1e88e5;
+	  }
+	
+	  .view-btn1:hover, .view-btn2:hover, .view-btn3:hover{
+	  	background-color: #42a5f5;
+	  }
+
+	  /* DISPLAY PICTURE STYLES */
+	  .dp {
+	  	max-width: 200px;
+	  	max-height: 278px;
+	  	border-radius: 7px;
+	  }
+
+	  /* CONTACT DIV STYLES */
+
+	  .contact-row{
+	  	height:70vh;
+	  	background-color: #fafafa;
+	  	margin-bottom: 0;
+	  }
+
+	  #email-icon{
+	  	color: #ff6666;
+	  	transition: linear 0.1s;
+	  }
+	
+	 #email-icon:hover{
+	 	color: #ff9999;
+	 }
+
+	 #github-icon{
+	 	max-height: 58px;
+	 	max-width: 58px;
+	 	transition: linear 0.2s;
+ 	 }
+
+ 	 #github-icon:hover{
+ 	 	opacity: 0.5;
+ 	 }
+
+ 	 #fb-icon{
+ 	 	max-width: 57px;
+ 	 	max-height: 57px;
+ 	 	transition: linear 0.2s;
+ 	 }
+
+ 	 #fb-icon:hover{
+ 	 	opacity: 0.5;
+ 	 }
+
+ 	 #email-icon > a >h5 , #fb-icon > a > h5, #github-icon > a >h5 {
+ 	 	color: black; 
+ 	 }
+
+
+	  </style>
+	</head>
+
+	<body>
+		<nav>
+			<div class="nav-wrapper">
+				&nbsp;
+				&nbsp;
+				<a href="#" class="brand-logo">KKJason</a>
+		      	<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="">About Me</a></li>		
+					<li><a href="">Projects</a></li>
+					<li><a href="">Skills</a></li>			
+					<li><a href="">Contact</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-nav">
+					<li><a href="">About Me</a></li>		
+					<li><a href="">Projects</a></li>
+					<li><a href="">Skills</a></li>			
+					<li><a href="">Contact</a></li>
+					<table>
+						<tr>
+							<td><li><a href="https://github.com/kkjasoncheung">Github</a></li></td>
+							<td><li><a href="mailto:kkjason.cheung@mail.utoronto.ca">Email</a></li></td>
+							<td><li><a href="#">Facebook</a></li></td>
+
+						</tr>
+					</table>
+					
+				</ul>
+			</div>	
+		</nav>
+
+		<div class="row hero-div">
+			<div class="container center text-container">
+				<div class="hero-text">
+					<h2>Hello, World.</h2>
+					<h4>My name is Jason.</h4>
+				
+				</div>
+			</div>
+
+			<div class="container center picture-container">
+
+				<img src="images/fb_dp.jpg" class="dp">
+			</div>
+ 
+			<div class="container center bio">
+				<p>
+					Welcome to my website! I'm 
+					currently a Computer Science student at the University of Toronto, and a passionate full stack web developer who builds high quality web apps and websites with Ruby on Rails.
+				</p>
+			</div>
+			<div class="container center scroll-ring-div">
+				<div class="scroll-ring center">
+					<a href=""><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row projects-row">
+			<div class="container center projects-container">
+				<br>
+				<h2>Projects</h2>
+				<h4>
+					Here's a look at some work I've done.
+				</h4>
+				<br>
+
+				<!-- PROJECT CARD 1--> 
+
+				<div class="col s12 m6 l4">
+					<div class="card card1">
+						<div class="card-content">
+							<span class="card-title card1-title">Reach</span>
+							<p class="info-1">
+								An app to increase student involvement at university and allows students to be aware of and easily register for all types of clubs, school hosted and club hosted events happening on campus.
+							</p>
+							
+						</div>
+						<div class="card-action card-action1">
+							<button class="waves-effect waves-light btn back-btn-red back-btn1 blue">View all</button>
+							<button class="waves-effect waves-light btn view-btn1 blue">View Project</button>
+						</div>
+					</div>
+
+					<div class="card-panel more-info-card2">
+						<p>Info card2:</p>
+						<ul>
+							<li>Text</li>
+							<li>Text</li>
+							<li>Text</li>
+
+						</ul>
+					</div>
+
+					<!-- MORE INFO CARD 3 -->
+					<div class="card-panel more-info-card3">
+						<p>Info card3:</p>
+						<ul>
+							<li>Text</li>
+							<li>Text</li>
+							<li>Text</li>
+						</ul>
+					</div>
+					
+				</div>
+
+				<!-- MORE INFO CARD 1 -->
+				<div class="col s12 m6 l4 more-info-card1">
+					<div class="card-panel more-info-card1">
+						<p>Info card1:</p>
+						<ul>
+							<li>Text</li>
+							<li>Text</li>
+							<li>Text</li>
+
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="col s12 m6 l4 more-info-card1">
+					<div class="card-panel">
+						<p>Info card1:</p>
+						<ul>
+							<li>Text</li>
+							<li>Text</li>
+							<li>Text</li>
+						</ul>
+					</div>
+				</div>					
+
+				<!-- PROJECT CARD 2--> 
+
+				<div class="col s12 m6 l4">
+					<div class="card card2">
+						<div class="card-content">
+							<span class="card-title">Admin CMS</span>
+							<p>A Content Management System web app. This app allows administrative users to log in, create, edit, update and delete content, organize it into subjects and sections for the public to view.</p>
+						</div>
+						<div class="card-action card-action2">
+							<button class="waves-effect waves-light btn back-btn-red back-btn2 blue">View all</button>
+							<button class="waves-effect waves-light btn view-btn2 blue">View Project</button>						
+						</div>
+					</div>
+
+					<!-- MORE INFO CARD 3 -->
+					<div class="card-panel more-info-card3">
+						<p>info card3:</p>
+						<ul>
+							<li>Text</li>
+							<li>Text</li>
+							<li>Text</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- PROJECT CARD 3--> 
+
+				<div class="col s12 m6 l4">
+		
+					<div class="card card3">
+						<div class="card-content">
+							<span class="card-title">Farm Radar</span>
+							<p>A modular remote sensing system that scans agricultural and environmental data and gives real time feedback. Won 3rd place and the SAP Innovation Award at Electric City Hacks 2016.</p>
+						</div>
+						<div class="card-action card-action3">
+							<button class="waves-effect waves-light btn back-btn-red back-btn3 blue">View all</button>
+							<button class="waves-effect waves-light btn view-btn3 blue">View Project</button>
+						</div>
+					</div>
+
+					<!-- MORE INFO CARD 2 -->
+					<div class="card-panel more-info-card2">
+						<p>Info card2:</p>
+						<ul>
+							<li>Text</li>
+							<li>Text</li>
+							<li>Text</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="container">
+					<div class="col s12 center">
+						<br>
+						<br>
+						<br>
+						
+						<h4>All projects made with love.</h4>
+
+						<p>
+							If you'd like to see more, check out my <a href="https://github.com/kkjasoncheung">Github</a>!
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row skills-row">
+			<div class="container center skills-container">
+				<br>
+				<h2>Skills</h2>
+				<h5>Here are some of my skills.</h5>
+			</div>
+		</div>
+		
+		<div class="row contact-row">
+			<div class="container center contact-container">
+				<br>
+				<h2>Contact</h2>
+				<h5>Got an idea? Let's get in touch!</h5>
+				<br>
+				<br>
+				<br>
+				<div class="row icon-row">
+					<div class="col s4">
+						<a href=""><img src="images/fb-icon.png" id="fb-icon"><h5>Facebook</h5></a>
+					</div>
+					<div class="col s4">
+						<a href="https://github.com/kkjasoncheung"><img src="images/github-icon.svg" id="github-icon"><h5>Github</h5></a>
+					</div>
+					<div class="col s4">
+						<a href="mailto:kkjason.cheung@mail.utoronto.ca"><i class="medium material-icons" id="email-icon">email</i><h5>Email</h5></a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+			
+				function scrollPulse(){
+			    	var i=0;
+			    	for (i=0;i<=1000;i++){
+			    		$(".scroll-ring").fadeOut(1200);
+			    		$(".scroll-ring").fadeIn(1200);
+			    	}   	
+			    }
+
+			    $(".button-collapse").sideNav();
+			
+			    setTimeout(function(){
+			    	$(".bio").fadeIn(800);
+			    	$(".scroll-ring-div").fadeIn(900);
+			    	setTimeout(function(){
+			    		scrollPulse();
+			    	},1000);
+			    }, 500);
+   					
+   				// FADE ONLY FOR LARGE SCREEN SIZES
+
+   				var screen_width = $(window).width();
+   				console.log(screen_width);
+
+   				if (screen_width>=993){
+   					// FOR PROJECT 1
+	   				$(".view-btn1").click(function(){
+	   					$(".card2").fadeOut("fast");
+	   					$(".card3").fadeOut("fast", function(){
+		   					$(".more-info-card1").fadeIn("fast");
+
+		   					$(".view-btn1").fadeOut("fast", function(){
+		   						$(".back-btn1").fadeIn("slow");
+		   					});
+	   					});
+	   				});
+
+	   				$(".back-btn1").click(function(){
+	   					$(".more-info-card1").fadeOut("fast", function(){
+	   						$(".card2").fadeIn("fast");
+	   						$(".card3").fadeIn("fast");
+	   					});
+	   					$(".back-btn1").fadeOut("fast",function(){
+	   						$(".view-btn1").fadeIn("fast");
+	   					});
+	   				});
+
+
+	   				// FOR PROJECT 2
+	   				$(".view-btn2").click(function(){
+	   					$(".card1").fadeOut("fast");
+	   					$(".card3").fadeOut("fast", function(){
+		   					$(".more-info-card2").fadeIn("fast");
+
+		   					$(".view-btn2").fadeOut("fast", function(){
+		   						$(".back-btn2").fadeIn("slow");
+		   					});
+	   					});
+	   				});
+
+	   				$(".back-btn2").click(function(){
+	   					$(".more-info-card2").fadeOut("fast", function(){
+	   						$(".card1").fadeIn("fast");
+	   						$(".card3").fadeIn("fast");
+	   					});
+	   					$(".back-btn2").fadeOut("fast",function(){
+	   						$(".view-btn2").fadeIn("fast");
+	   					});
+	   				});
+
+					// FOR PROJECT 2
+	   				$(".view-btn3").click(function(){
+	   					$(".card1").fadeOut("fast");
+	   					$(".card2").fadeOut("fast", function(){
+		   					$(".more-info-card3").fadeIn("fast");
+
+		   					$(".view-btn3").fadeOut("fast", function(){
+		   						$(".back-btn3").fadeIn("slow");
+		   					});
+	   					});
+	   				});
+
+	   				$(".back-btn3").click(function(){
+	   					$(".more-info-card3").fadeOut("fast", function(){
+	   						$(".card1").fadeIn("fast");
+	   						$(".card2").fadeIn("fast");
+	   					});
+	   					$(".back-btn3").fadeOut("fast",function(){
+	   						$(".view-btn3").fadeIn("fast");
+	   					});
+	   				});
+   				} else {
+
+   				}
+
+   			
+
+			});
+		</script>
+	</body>
+</html>
