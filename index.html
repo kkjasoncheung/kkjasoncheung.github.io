@@ -172,7 +172,9 @@
  	 	color: black; 
  	 }
 
-
+ 	 .gray-hr{
+ 	 	opacity: 0.4;
+ 	 }
 	  </style>
 	</head>
 
@@ -246,8 +248,8 @@
 
 				<!-- PROJECT CARD 1--> 
 
-				<div class="col s12 m6 l4">
-					<div class="card card1">
+				<div class="col s12 m6 l4 left-most">
+					<div class="card card1 reach-more-info">
 						<div class="card-content">
 							<span class="card-title card1-title">Reach</span>
 							<p class="info-1">
@@ -270,34 +272,43 @@
 
 						</ul>
 					</div>
-
-					<!-- MORE INFO CARD 3 -->
-					<div class="card-panel more-info-card3">
-						<p>Info card3:</p>
-						<ul>
-							<li>Text</li>
-							<li>Text</li>
-							<li>Text</li>
-						</ul>
+					<div class="fr-more-info">
+						<div class="card-panel more-info-card3">
+							<h5 class="card-title">Front End Developer</h5>
+							<hr class="gray-hr">
+							<ul>
+								<li><i class="tiny material-icons done_all">done_all</i>&nbsp;Utilized the Dashing front-end framework to implement a modern, sleek and customizable dashboard. </li>
+								<li><i class="tiny material-icons done_all">done_all</i>&nbsp;Implemented real time, location based features with Javascript and Google's Geolocation API and Dark Sky API.</li>
+								<li>&nbsp;</li>
+							</ul>
+							<a href="https://github.com/kkjasoncheung/farmradar-final" class="waves-effect waves-light btn">View on GitHub</a>
+						</div>
 					</div>
-					
+					<!-- MORE INFO CARD 3 -->
 				</div>
+				
+
 
 				<!-- MORE INFO CARD 1 -->
-				<div class="col s12 m6 l4 more-info-card1">
+				<div class="col s12 m6 l8 more-info-card1">
 					<div class="card-panel more-info-card1">
-						<p>Info card1:</p>
+						<h5 class="card-title">Full Stack Developer</h5>
+						<hr class="gray-hr">
 						<ul>
-							<li>Text</li>
-							<li>Text</li>
-							<li>Text</li>
-
+							<li><i class="tiny material-icons done_all">done_all</i>&nbsp;Utilized Ruby on Rails to create a fully featured web app with a mySQL database to store records.</li>
+							<li><i class="tiny material-icons done_all">done_all</i>&nbsp;Implemented a modern, mobile responsive and intuitive UI with Bootstrap.</li>
+							<li><i class="tiny material-icons done_all">done_all</i>&nbsp;Utilized gems like paperclip and bcrypt for photo uploads and password encryption.</li>
 						</ul>
+
+						<br>
+						<div class="card-action card-action1">
+							<a href="https://github.com/kkjasoncheung/reach" class="waves-effect waves-light btn">View on GitHub</a>
+						</div>
 					</div>
 				</div>
 
-
-				<div class="col s12 m6 l4 more-info-card1">
+				<!--
+				<div class="col s12 more-info-card1">
 					<div class="card-panel">
 						<p>Info card1:</p>
 						<ul>
@@ -307,11 +318,11 @@
 						</ul>
 					</div>
 				</div>					
-
+				-->
 				<!-- PROJECT CARD 2--> 
 
 				<div class="col s12 m6 l4">
-					<div class="card card2">
+					<div class="card card2 second-card-info">
 						<div class="card-content">
 							<span class="card-title">Admin CMS</span>
 							<p>A Content Management System web app. This app allows administrative users to log in, create, edit, update and delete content, organize it into subjects and sections for the public to view.</p>
@@ -321,16 +332,8 @@
 							<button class="waves-effect waves-light btn view-btn2 blue">View Project</button>						
 						</div>
 					</div>
-
-					<!-- MORE INFO CARD 3 -->
-					<div class="card-panel more-info-card3">
-						<p>info card3:</p>
-						<ul>
-							<li>Text</li>
-							<li>Text</li>
-							<li>Text</li>
-						</ul>
-					</div>
+					
+					
 				</div>
 
 				<!-- PROJECT CARD 3--> 
@@ -343,8 +346,8 @@
 							<p>A modular remote sensing system that scans agricultural and environmental data and gives real time feedback. Won 3rd place and the SAP Innovation Award at Electric City Hacks 2016.</p>
 						</div>
 						<div class="card-action card-action3">
-							<button class="waves-effect waves-light btn back-btn-red back-btn3 blue">View all</button>
-							<button class="waves-effect waves-light btn view-btn3 blue">View Project</button>
+							<button class="waves-effect waves-light btn back-btn-red back-btn3 blue fr-view-all">View all</button>
+							<button class="waves-effect waves-light btn view-btn3 blue fr-view-project">View Project</button>
 						</div>
 					</div>
 
@@ -483,7 +486,7 @@
 	   					});
 	   				});
 
-					// FOR PROJECT 2
+					// FOR PROJECT 3
 	   				$(".view-btn3").click(function(){
 	   					$(".card1").fadeOut("fast");
 	   					$(".card2").fadeOut("fast", function(){
@@ -505,7 +508,19 @@
 	   					});
 	   				});
    				} else {
+   					// for smaller screens
+   					$(".view-btn1").click(function(){
+   						// redirect to github page
+   						window.location.href = "https://github.com/kkjasoncheung/reach";
+   					});
 
+   					$(".view-btn2").click(function(){
+   						window.location.href = "https://github.com/kkjasoncheung/bounty";
+   					});
+
+   					$(".view-btn3").click(function(){
+   						window.location.href = 'https://github.com/kkjasoncheung/farmradar-final';
+   					});
    				}
 
    				// Smooth scrolling to links
@@ -533,7 +548,28 @@
 				    } // End if
 				  });
    			
-
+				// click view project for fr
+				$(".fr-view-project").click(function(){
+					$(".reach-more-info").fadeOut(function(){
+						$(".second-card-info").fadeOut(function(){
+							$(".left-most").addClass("l8");
+							$(".left-most").removeClass("l4");
+							$(".fr-more-info").fadeIn();
+						});
+						
+					});
+				});
+				
+				$(".fr-view-all").click(function(){
+					$(".fr-more-info").fadeOut('fast', function(){
+						$(".left-most").addClass("l4");
+						$(".left-most").removeClass("l8");
+						$(".second-card-info").fadeIn();
+						$(".reach-more-info").fadeIn();
+					});
+					
+					
+				});
 			});
 		</script>
 	</body>
