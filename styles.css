@@ -1,104 +1,88 @@
 body {
-    font-family: sans-serif;
-}	  	
+  font-family: sans-serif;
+}
 /* navigation bar styles */
 
-.nav-wrapper{
-  background-color: #ef5350;
-}
 nav > .nav-wrapper > a {
-  color: white;
+  color: #455a64;
 }
-.hero-div{
-  border: 1px solid red;
-  min-height: 100vh;
-  color: white;
-  background-image: url("images/hero-img.png");
+
+.hero-div {
+  font-family: "Special Elite", cursive;
   background-size: cover;
   margin-bottom: 0;
 }
 
-.text-container{
+.text-container {
   margin-top: 80px;
 }
 /* bio-div styles */
-.bio{
+.bio {
   font-size: 16px;
   margin-top: 30px;
   background-color: white;
-  color:black;
+  color: black;
 
-  padding:10px 15px;
+  padding: 10px 15px;
   border-radius: 5px;
   display: none;
 }
-  
+
 /* pulsing scroll arrow styles */
-.scroll-ring-div{
+.scroll-ring-div {
   margin-top: 30px;
   display: none;
   padding-bottom: 20px;
-
 }
 
-.scroll-ring{
-
-  width:50px;
+.scroll-ring {
+  width: 50px;
   height: 50px;
   margin: 0 auto;
   border-radius: 50px;
   background-color: transparent;
-  border:2px solid white;
-
+  border: 2px solid white;
 }
-.fa-arrow-down{
-  margin-top:12px;
+.fa-arrow-down {
+  margin-top: 12px;
   font-size: 25px;
   color: white;
-
 }
 
-.email-icon-div{
+.email-icon-div {
   max-width: 200px;
   max-height: 200px;
   margin: 0 auto;
 }
 
-.info-2{
+.info-2 {
   display: none;
 }
 
-.more-info-card1, .more-info-card2, .more-info-card3{
+.more-info-card1,
+.more-info-card2,
+.more-info-card3 {
   display: none;
 }
-
-.projects-row{
-  margin-bottom: 0;
-  min-height: 100vh;
-  background-color: #fafafa;
-}
-
-
-
-.skills-row{
-  min-height: 400px;
-}
-
 
 .back-btn-red {
   display: none;
   background-color: #1e88e5;
 }
 
-.back-btn-red:hover{
+.back-btn-red:hover {
   background-color: #42a5f5;
 }
 
-.view-btn1, .view-btn2, .view-btn3{
+.view-btn1,
+.view-btn2,
+.view-btn3 {
   background-color: #1e88e5;
 }
 
-.view-btn1:hover, .view-btn2:hover, .view-btn3:hover{
+.view-btn1:hover,
+.view-btn2:hover,
+.view-btn3:hover {
   background-color: #42a5f5;
 }
 
@@ -111,49 +95,71 @@ nav > .nav-wrapper > a {
 
 /* CONTACT DIV STYLES */
 
-.contact-row{
-  height:70vh;
+.contact-row {
+  height: 70vh;
   background-color: #fafafa;
   margin-bottom: 0;
 }
 
-#email-icon{
+#email-icon {
   color: #ff6666;
   transition: linear 0.1s;
 }
 
-#email-icon:hover{
- color: #ff9999;
+#email-icon:hover {
+  color: #ff9999;
 }
 
-#github-icon{
- max-height: 58px;
- max-width: 58px;
- transition: linear 0.2s;
+#github-icon {
+  max-height: 58px;
+  max-width: 58px;
+  transition: linear 0.2s;
 }
 
-#github-icon:hover{
+#github-icon:hover {
   opacity: 0.5;
 }
 
-#fb-icon{
+#fb-icon {
   max-width: 57px;
   max-height: 57px;
   transition: linear 0.2s;
 }
 
-#fb-icon:hover{
+#fb-icon:hover {
   opacity: 0.5;
 }
 
-#email-icon > a >h5 , #fb-icon > a > h5, #github-icon > a >h5 {
-  color: black; 
+#email-icon > a > h5,
+#fb-icon > a > h5,
+#github-icon > a > h5 {
+  color: black;
 }
 
-.gray-hr{
+.gray-hr {
   opacity: 0.4;
 }
 
 #warning-msg {
-    text-align: center;
+  text-align: center;
+}
+
+/* Alternating Backgrounds */
+#projects-row,
+#food-row {
+  background-color: #fafafa;
+}
+
+/* Built Div Styles */
+#projects-row {
+  font-family: sans-serif;
+  margin-bottom: 0;
+}
+
+#built-title-div {
+  /* border: 1px solid red; */
+}
+
+.datetime {
+  color: azure;
 }
