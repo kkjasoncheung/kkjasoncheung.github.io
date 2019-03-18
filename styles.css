@@ -156,8 +156,10 @@ nav > .nav-wrapper > a {
   margin-bottom: 0;
 }
 
-#built-title-div {
-  /* border: 1px solid red; */
+#built-title,
+#teaching-title,
+#food-title {
+  font-family: "Special Elite", cursive;
 }
 
 .datetime {
