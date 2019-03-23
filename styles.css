@@ -16,85 +16,8 @@ nav > .nav-wrapper > a {
 .text-container {
   margin-top: 80px;
 }
-/* bio-div styles */
-.bio {
-  font-size: 16px;
-  margin-top: 30px;
-  background-color: white;
-  color: black;
-
-  padding: 10px 15px;
-  border-radius: 5px;
-  display: none;
-}
-
-/* pulsing scroll arrow styles */
-.scroll-ring-div {
-  margin-top: 30px;
-  display: none;
-  padding-bottom: 20px;
-}
-
-.scroll-ring {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: transparent;
-  border: 2px solid white;
-}
-.fa-arrow-down {
-  margin-top: 12px;
-  font-size: 25px;
-  color: white;
-}
-
-.email-icon-div {
-  max-width: 200px;
-  max-height: 200px;
-  margin: 0 auto;
-}
-
-.info-2 {
-  display: none;
-}
-
-.more-info-card1,
-.more-info-card2,
-.more-info-card3 {
-  display: none;
-}
-
-.back-btn-red {
-  display: none;
-  background-color: #1e88e5;
-}
-
-.back-btn-red:hover {
-  background-color: #42a5f5;
-}
-
-.view-btn1,
-.view-btn2,
-.view-btn3 {
-  background-color: #1e88e5;
-}
-
-.view-btn1:hover,
-.view-btn2:hover,
-.view-btn3:hover {
-  background-color: #42a5f5;
-}
-
-/* DISPLAY PICTURE STYLES */
-.dp {
-  max-width: 200px;
-  max-height: 278px;
-  border-radius: 7px;
-}
 
 /* CONTACT DIV STYLES */
-
 .contact-row {
   height: 70vh;
   background-color: #fafafa;
@@ -136,24 +59,19 @@ nav > .nav-wrapper > a {
   color: black;
 }
 
-.gray-hr {
-  opacity: 0.4;
-}
-
 #warning-msg {
   text-align: center;
 }
 
 /* Alternating Backgrounds */
-#projects-row,
+#experience-row,
 #food-row {
   background-color: #fafafa;
 }
 
 /* Built Div Styles */
-#projects-row {
+#experience-row {
   font-family: sans-serif;
-  margin-bottom: 0;
 }
 
 #built-title,
@@ -163,12 +81,28 @@ nav > .nav-wrapper > a {
 }
 
 .datetime {
-  color: azure;
+  color: black;
 }
 
 /* Display Photo */
 #display-photo {
   max-width: 250px;
   max-height: 250px;
-  /* border: 1px solid red; */
+}
+
+/* Experience Entry */
+.logo {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 20px;
+}
+
+.job-title {
+  color: #08aa95;
+}
+
+.job-description-inverted {
+  background-color: #fafafa;
+  padding: 10px;
+  border-radius: 20px;
 }
