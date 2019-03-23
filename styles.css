@@ -18,11 +18,6 @@ nav > .nav-wrapper > a {
 }
 
 /* CONTACT DIV STYLES */
-.contact-row {
-  height: 70vh;
-  background-color: #fafafa;
-  margin-bottom: 0;
-}
 
 #email-icon {
   color: #ff6666;
@@ -33,17 +28,12 @@ nav > .nav-wrapper > a {
   color: #ff9999;
 }
 
-#github-icon {
-  max-height: 58px;
-  max-width: 58px;
-  transition: linear 0.2s;
-}
-
 #github-icon:hover {
   opacity: 0.5;
 }
 
-#fb-icon {
+#github-icon,
+#linkedin-icon {
   max-width: 57px;
   max-height: 57px;
   transition: linear 0.2s;
@@ -74,7 +64,8 @@ nav > .nav-wrapper > a {
   font-family: sans-serif;
 }
 
-.row-title {
+.row-title,
+.row-footer {
   font-family: "Special Elite", cursive;
 }
 
