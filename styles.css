@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  text-align: center;
 }
 /* navigation bar styles */
 
@@ -10,7 +11,6 @@ nav > .nav-wrapper > a {
 .hero-div {
   font-family: "Special Elite", cursive;
   background-size: cover;
-  margin-bottom: 0;
 }
 
 .text-container {
@@ -164,4 +164,11 @@ nav > .nav-wrapper > a {
 
 .datetime {
   color: azure;
+}
+
+/* Display Photo */
+#display-photo {
+  max-width: 250px;
+  max-height: 250px;
+  /* border: 1px solid red; */
 }

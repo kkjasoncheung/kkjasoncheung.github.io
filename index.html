@@ -31,23 +31,22 @@
   <body>
     <div class="row hero-div" id="about-me-row">
       <div class="container center text-container">
-        <div>
+        <div class="col s12 l4">
+          <img src="images/me.jpg" id="display-photo" />
+        </div>
+        <div class="col s12 l8">
           <h2>Hello, World! 👋</h2>
+          <h3>My name is Jason</h3>
           <h3 id="hero-text">I'm a Software Engineer 👨🏼‍💻</h3>
-          <!-- <h3>I'm a Teacher 👨🏼‍🏫📝</h3>
-          <h3>I'm a Foodie 😍🍣🥗🍰</h3>
-		  <h3>I'm a Problem Solver 🧩</h3> -->
-          <br />
         </div>
       </div>
     </div>
-
     <div id="projects-row">
       <br />
       <div class="row">
         <div class="container">
           <div class="col s12 center" id="built-title-div">
-            <h4 id="built-title">Some things I've built 🛠</h4>
+            <h4 id="built-title">Some places I've worked at 💼</h4>
             <!-- Intersect Experience Card -->
             <div class="card horizontal" id="ix-card">
               <div class="card-image">
@@ -75,7 +74,7 @@
             <!-- IX Experience Card -->
             <div class="card horizontal" id="ix-card">
               <div class="card-image">
-                <img src="images/ix_logo.jpg" />
+                <img src="images/ix_logo.svg" />
               </div>
               <div class="card-stacked">
                 <div class="card-content">
@@ -216,19 +215,30 @@
     </div>
 
     <script type="text/javascript">
-      // Define the introduction text
-      let phrases = [
-        "I'm a Software Engineer 👨🏼‍💻",
-        "I'm a Teacher 👨🏼‍🏫📝",
-        "I'm a Foodie 😍🍣🥗🍰",
-        "I'm a Problem Solver 🧩"
-      ];
+      function alternateHeroText() {
+        // Define the introduction text
+        const phrases = [
+          "I'm a Software Engineer 👨🏼‍💻",
+          "I'm a Teacher 👨🏼‍🏫📝",
+          "I'm a Foodie 😍🍣🥗🍰",
+          "I'm a Problem Solver 🧩"
+        ];
 
-      // Select hero-text area
-      function typewriter(phrase) {
-        console.log("hello");
-        console.log($("#hero-text").text());
+        var i = 0;
+        setInterval(function() {
+          $("#hero-text").fadeOut("slow", function() {
+            $("#hero-text").text(phrases[i]);
+            $("#hero-text").fadeIn("slow");
+          });
+          if (i == phrases.length - 1) {
+            i = 0;
+          } else {
+            i += 1;
+          }
+        }, 3000);
       }
+
+      alternateHeroText();
     </script>
   </body>
 </html>
