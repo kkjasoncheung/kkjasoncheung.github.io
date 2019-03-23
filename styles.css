@@ -74,9 +74,7 @@ nav > .nav-wrapper > a {
   font-family: sans-serif;
 }
 
-#built-title,
-#teaching-title,
-#food-title {
+.row-title {
   font-family: "Special Elite", cursive;
 }
 
@@ -99,10 +97,18 @@ nav > .nav-wrapper > a {
 
 .job-title {
   color: #08aa95;
+  font-size: 22px;
 }
 
 .job-description-inverted {
   background-color: #fafafa;
   padding: 10px;
   border-radius: 20px;
+}
+
+/* Food Section */
+.food-pic {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 5px;
 }
