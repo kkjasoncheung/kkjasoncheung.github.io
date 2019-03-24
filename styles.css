@@ -28,7 +28,8 @@ nav > .nav-wrapper > a {
   color: #0adbbf;
 }
 
-#github-icon:hover {
+#github-icon:hover,
+#linkedin-icon:hover {
   opacity: 0.5;
 }
 
