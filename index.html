@@ -20,6 +20,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <!--Let browser know website is optimized for mobile-->
@@ -41,7 +45,7 @@
         </div>
         <div class="col s12 l8">
           <h2>Hello, World! 👋</h2>
-          <h3>My name is Jason</h3>
+          <h3>My name is Jason.</h3>
           <h4 id="hero-text">I'm a Software Engineer 👨🏼‍💻</h4>
         </div>
       </div>
@@ -52,6 +56,7 @@
         <div class="container">
           <div class="col s12 center" id="built-title-div">
             <h4 class="row-title">Some places I've worked at 💼</h4>
+            <br />
             <!-- Intersect Experience Card -->
             <div class="row experience">
               <div class="col s12 l4">
@@ -71,9 +76,30 @@
                     Toronto, ON
                   </p>
                   <ul>
-                    <li>Point 1</li>
-                    <li>Point 2</li>
-                    <li>Point 3</li>
+                    <li>
+                      Currently working as a Back End developer working with
+                      Ruby, Grape API, Ruby on Rails, Postman API Testing,
+                      Docker and RSpec. My work includes building a brand new
+                      coworking space platform for a client that offers private,
+                      exclusive worldwide hotels, spas, bars, cinemas and
+                      restaurants.
+                    </li>
+                    <li>
+                      Implemented feature to allow users to add payment options
+                      in order to be charged when booking coworking spaces.
+                    </li>
+                    <li>
+                      Implemeted password reset flow for users when resetting
+                      their password which includes leveraging the Mandrill API
+                      to send an email containing a reset token.
+                    </li>
+                    <li>
+                      Wrote several
+                      <span class="code">rake tasks</span>
+                      to automate workflows within the team including running
+                      integration tests on Postman to ensure robust testing and
+                      that API endpoints adhere to Swagger definition.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -129,6 +155,7 @@
         <div class="container">
           <div class="col s12 center" id="teaching-title-div">
             <h4 class="row-title">Some things I've taught 👨🏼‍🏫</h4>
+            <br />
             <!-- TA Experience Card -->
             <div class="row experience">
               <div class="col s12 l4">
@@ -213,10 +240,116 @@
     </div>
 
     <div id="projects-row">
+      <br />
       <div class="row">
         <div class="container">
           <div class="col s12 center" id="projects-title-div">
             <h4 class="row-title">Some projects I've built 🛠</h4>
+            <br />
+            <!-- Project Card -->
+            <div class="row project">
+              <div class="col s12 l4">
+                <img class="logo" src="images/icon/github-icon.svg" />
+              </div>
+              <div class="col s12 l8">
+                <div class="project-description">
+                  <a href="">
+                    <h5></h5>
+                  </a>
+                  <p class="project-title">
+                    Better Buddy API (Work in Progress)
+                  </p>
+                  <p>
+                    This project is built using Golang, Go-Gin and GORM. Better
+                    Buddy API is the API associated with the Better Buddy Mobile
+                    app that will be built as an effort to provide a companion
+                    based, lifestyle improvement application. This is based on a
+                    tamagotchi effect where an emotional attachment is built
+                    with a digital pet and every positive or negative habit the
+                    user does influences the state of the pet.
+                  </p>
+                  <a href="" class="waves-effect waves-light btn"
+                    >See it on GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <br />
+            <!-- Project Card -->
+            <div class="row project">
+              <div class="col s12 l4">
+                <img class="logo" src="images/icon/hack_the_north.png" />
+              </div>
+              <div class="col s12 l8">
+                <div class="project-description">
+                  <a href="">
+                    <h5>
+                      Hack The North 2017
+                    </h5>
+                  </a>
+                  <p class="project-title">
+                    doofieBot
+                  </p>
+                  <p>
+                    This project was built using IBM Watson's Visual Recognition
+                    API, Python, Flask and Slack SDK. doofieBot was inspired by
+                    the fear of missing out on good food. What happens if your
+                    friend sends you a picture of a particularly good meal they
+                    had, and you start craving it too? By intelligently
+                    identifying the food and harnessing the power of restaurant
+                    analytics API, a single command,
+                    <span class="code">/doof</span>, will recommend relevant
+                    restaurants within your vicinity.
+                  </p>
+                  <a
+                    href="https://devpost.com/software/doofiebot"
+                    class="waves-effect waves-light btn"
+                    >See it on DevPost</a
+                  >
+                </div>
+              </div>
+            </div>
+            <br />
+            <!-- Project Card -->
+            <div class="row project">
+              <div class="col s12 l4">
+                <img class="logo" src="images/icon/ec_hacks.png" />
+              </div>
+              <div class="col s12 l8">
+                <div class="project-description">
+                  <a href="">
+                    <h5>
+                      Electric City Hacks 2016
+                    </h5>
+                  </a>
+                  <p class="project-title">
+                    Farm Radar
+                  </p>
+                  <p id="award-phrase">
+                    Achieved 3rd Place and SAP Innovation award.
+                  </p>
+                  <p>
+                    This project was built with Arduino, Sinatra, Ruby and the
+                    Dashing Framework. Farm Radar is a modular remote sensing
+                    system that scans agricultural and environmental data and
+                    gives real time feedback. The inspiration for this project
+                    started after reading about big data in Agri-tech and the
+                    use of drones in the farm management system. What if by
+                    using modular ground level sensors we could also easily
+                    assess the quality of the farmland at the current time and
+                    also be able to monitor long and short term trends? This
+                    will also allow us to cross check with drone imaging and all
+                    together create a big data warehouse which could give a lot
+                    of information to users.
+                  </p>
+                  <a
+                    href="https://devpost.com/software/farm-radar"
+                    class="waves-effect waves-light btn"
+                    >See it on DevPost</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -227,6 +360,7 @@
         <div class="container">
           <div class="col s12 center" id="food-title-div">
             <h4 class="row-title">Some food I love 😍🍣🥗🍰</h4>
+            <br />
             <div class="row">
               <div class="col s12 l4">
                 <img
@@ -251,8 +385,8 @@
         </div>
       </div>
     </div>
-
-    <div class="row contact-row" id="contact-row">
+    <div class="row" id="contact-row">
+      <br />
       <div class="container center contact-container">
         <h2>Contact</h2>
         <h5>Got an idea? Let's get in touch!</h5>

@@ -20,12 +20,12 @@ nav > .nav-wrapper > a {
 /* CONTACT DIV STYLES */
 
 #email-icon {
-  color: #ff6666;
+  color: #08aa95;
   transition: linear 0.1s;
 }
 
 #email-icon:hover {
-  color: #ff9999;
+  color: #0adbbf;
 }
 
 #github-icon:hover {
@@ -55,7 +55,8 @@ nav > .nav-wrapper > a {
 
 /* Alternating Backgrounds */
 #experience-row,
-#food-row {
+#contact-row,
+#projects-row {
   background-color: #fafafa;
 }
 
@@ -86,7 +87,8 @@ nav > .nav-wrapper > a {
   border-radius: 20px;
 }
 
-.job-title {
+.job-title,
+.project-title {
   color: #08aa95;
   font-size: 22px;
 }
@@ -102,4 +104,14 @@ nav > .nav-wrapper > a {
   max-width: 300px;
   max-height: 300px;
   border-radius: 5px;
+}
+
+#award-phrase {
+  color: #049be5;
+  font-size: 22px;
+}
+
+/* Code Style */
+.code {
+  font-family: "IBM Plex Mono", monospace;
 }
