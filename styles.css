@@ -116,3 +116,9 @@ nav > .nav-wrapper > a {
 .code {
   font-family: "IBM Plex Mono", monospace;
 }
+
+/* Font Awesome */
+.fa-circle {
+  font-size: 5px;
+  vertical-align: middle;
+}
