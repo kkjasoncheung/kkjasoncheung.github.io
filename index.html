@@ -1,546 +1,87 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <!-- Font Imports -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Special+Elite"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/7a7a27f76a.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <!-- Fav Icon -->
-    <link
-      rel="icon"
-      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/155/male-technologist-type-3_1f468-1f3fc-200d-1f4bb.png"
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Jason Cheung</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>👨🏼‍💻 Jason Cheung</title>
   </head>
-
   <body>
-    <div class="row hero-div" id="about-me-row">
-      <div class="container center text-container">
-        <div class="col s12 l4">
-          <img src="images/me_in_la.jpg" id="display-photo" />
-        </div>
-        <div class="col s12 l8">
-          <br />
-          <h4>Hello, World! 👋</h4>
-          <br />
-          <h5>My name is Jason.</h5>
-          <h5 id="hero-text">I'm a Software Engineer 👨🏼‍💻</h5>
-        </div>
-      </div>
-    </div>
-    <div id="experience-row">
-      <br />
+    <div class="container-fluid" id="container1">
       <div class="row">
-        <div class="container">
-          <div class="col s12 center" id="built-title-div">
-            <h5 class="row-title">Some places I've worked at 💼</h5>
-            <br />
-            <!-- Microsoft Experience Card -->
-            <div class="row experience">
-              <div class="col s12 l4">
-                <img class="logo" src="images/icon/microsoft.jpg" />
-              </div>
-              <div class="col s12 l8">
-                <div class="job-description">
-                  <a href="https://about.google/intl/en/">
-                    <h5>
-                      Microsoft
-                    </h5>
-                  </a>
-                  <p class="job-title">
-                    (Incoming) Software Engineer
-                  </p>
-                  <p class="location">
-                    Redmond, WA
-                  </p>
-                  <ul>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Internal Tools & Applications
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Google Experience Card -->
-            <div class="row experience">
-              <div class="col s12 l4">
-                <br />
-                <img class="logo" src="images/icon/google.png" />
-              </div>
-              <div class="col s12 l8">
-                <div class="job-description">
-                  <a href="https://about.google/intl/en/">
-                    <h5>
-                      Google
-                    </h5>
-                  </a>
-                  <p class="job-title">
-                    Technical Solutions Consultant Intern, May 2019 - August
-                    2019
-                  </p>
-                  <p class="location">
-                    Toronto, ON
-                  </p>
-                  <ul>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Decreased monitoring infrastructure set up time by at
-                      least 150% for Google Cloud Platform projects by creating
-                      a Monitoring as Code tool in Python leveraging Google
-                      Cloud client libraries.
-                    </li>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Reduced the number of user-required fields when creating
-                      monitoring resources by 50% by implementing best practice
-                      defaults for 60+ metrics across 5+ Google Cloud products.
-                    </li>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Established and maintained test coverage of 90% by
-                      implementing 300+ robust unit tests.
-                    </li>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Established consistent lines of communication between
-                      stakeholders and leadership through frequent syncs,
-                      presentations and weekly status emails over 13 sprints
-                      resulting in clear visibility.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Intersect Experience Card -->
-            <div class="row experience">
-              <div class="col s12 l4">
-                <img class="logo" src="images/icon/symbility.jpg" />
-              </div>
-              <div class="col s12 l8">
-                <div class="job-description">
-                  <a href="https://www.weareintersect.com/">
-                    <h5>
-                      Intersect
-                    </h5>
-                  </a>
-                  <p class="job-title">
-                    Software Engineer Intern, January 2019 - May 2019
-                  </p>
-                  <p class="location">
-                    Toronto, ON
-                  </p>
-                  <ul>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Currently working as a Back End developer working with
-                      Ruby, Grape API, Ruby on Rails, Postman API Testing,
-                      Docker and RSpec. My work includes building a brand new
-                      coworking space platform for a client that offers private,
-                      exclusive worldwide hotels, spas, bars, cinemas and
-                      restaurants.
-                    </li>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Implemented feature to allow users to add payment options
-                      in order to be charged when booking coworking spaces.
-                    </li>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Implemeted password reset flow for users when resetting
-                      their password which includes leveraging the Mandrill API
-                      to send an email containing a reset token.
-                    </li>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Wrote several
-                      <span class="code">rake tasks</span>
-                      to automate workflows within the team including running
-                      integration tests on Postman to ensure robust testing and
-                      that API endpoints adhere to Swagger definition.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- IX Experience Card -->
-            <div class="row experience">
-              <div class="col s12 l4">
-                <img class="logo" src="images/icon/ix.svg" />
-              </div>
-              <div class="col s12 l8">
-                <div class="job-description">
-                  <a href="https://www.indexexchange.com/">
-                    <h5>
-                      Index Exchange
-                    </h5>
-                  </a>
-                  <p class="job-title">
-                    Software Engineer and Scrum Master Intern, May 2018 - August
-                    2018
-                  </p>
-                  <p class="location">
-                    Toronto, ON
-                  </p>
-                  <ul>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Implemented multiple web applications with Angular 6,
-                      Docker, Material Design and Responsive Design by using
-                      Bootstrap grid to effectively create layouts and
-                      intuitive, mobile-friendly applications for entire
-                      departments.
-                    </li>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Established and maintained test coverage of 88% by
-                      implementing 150+ robust unit, integration, E2E tests, and
-                      continuous integration jobs leading to consistently high
-                      quality code being deployed to production.
-                    </li>
-                    <li>
-                      <i class="fas fa-circle"></i>
-                      Optimized and revamped workflows by 50% by creating
-                      scalable web applications with a microservices
-                      architecture, leading to reduced time to blacklist domains
-                      on a global ad exchange.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        <div class="col-12">
+          <div class="align-center" id="headlines-container">
+            <h1 id="headline">
+              My name is Jason.
+              <span class="light-gray">I am a Software Engineer. 👨🏼‍💻</span>
+            </h1>
           </div>
         </div>
       </div>
-    </div>
-
-    <div id="teaching-row">
-      <div class="row">
-        <div class="container">
-          <div class="col s12 center" id="teaching-title-div">
-            <h5 class="row-title">Some things I've taught 👨🏼‍🏫</h5>
-            <br />
-            <!-- TA Experience Card -->
-            <div class="row experience">
-              <div class="col s12 l4">
-                <img class="logo-invert" src="images/icon/utsc.png" />
-              </div>
-              <div class="col s12 l8">
-                <div class="job-description-inverted">
-                  <a
-                    href="https://www.utoronto.ca/university-life/campuses/scarborough"
-                  >
-                    <h5>
-                      University of Toronto, Scarborough
-                    </h5>
-                  </a>
-                  <p class="job-title">
-                    Teaching Assistant
-                  </p>
-                  <p class="location">
-                    Toronto, ON
-                  </p>
-                  <ul>
-                    <li>
-                      CSCA08 - Introduction to Computer Science (September 2019
-                      - Present)
-                    </li>
-                    <li>
-                      CSCA67 - Discrete Mathematics (September 2019 - Present)
-                    </li>
-                    <li>
-                      CSCA08 - Introduction to Computer Science (September 2018
-                      - December 2018)
-                    </li>
-                    <li>
-                      CSCA20 - Introduction to Programming (September 2018 -
-                      December 2018)
-                    </li>
-                    <li>
-                      CSCA48 - Introduction to Computer Science II (January 2018
-                      - April 2018)
-                    </li>
-                    <li>
-                      CSCA20 - Introduction to Programming (September 2017 -
-                      December 2017)
-                    </li>
-                  </ul>
-                  <hr />
-                  <p>
-                    Organized and taught weekly tutorials, labs and review
-                    sessions for over 35 students in CSCA20 and CSCA48,
-                    providing an interactive environment for students to enhance
-                    the learning of new complex course material.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- AMACSS Experience Card -->
-            <div class="row experience">
-              <div class="col s12 l4">
-                <img class="logo" src="images/icon/amacss.jpg" />
-              </div>
-              <div class="col s12 l8">
-                <div class="job-description-inverted">
-                  <a href="https://amacss.org/">
-                    <h5>
-                      Association of Mathematical and Computer Science Students
-                    </h5>
-                  </a>
-                  <p class="job-title">
-                    Academic Representative, September 2017 - December 2017
-                  </p>
-                  <p class="location">
-                    Toronto, ON
-                  </p>
-                  <p>
-                    Hosted weekly, FSG (Facilitated Study Groups) for CSCA48
-                    (Introduction to Computer Science II) in class sizes of
-                    10-12 students, providing an interactive learning
-                    environment for course material. Hosted weekly, one-on-one
-                    office hour sessions for students in CSCA67 (Discrete
-                    Mathematics), providing academic assistance for students and
-                    increasing their understanding of course material.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="projects-row">
       <br />
-      <div class="row">
-        <div class="container">
-          <div class="col s12 center" id="projects-title-div">
-            <h5 class="row-title">Some projects I've built 🛠</h5>
-            <br />
-            <!-- Project Card -->
-            <div class="row project">
-              <div class="col s12 l4">
-                <img class="logo" src="images/icon/github-icon.svg" />
-              </div>
-              <div class="col s12 l8">
-                <div class="project-description">
-                  <a href="">
-                    <h5></h5>
-                  </a>
-                  <p class="project-title">
-                    Better Buddy API (Work in Progress)
-                  </p>
-                  <p>
-                    This project is built using Golang, Go-Gin and GORM. Better
-                    Buddy API is the API associated with the Better Buddy Mobile
-                    app that will be built as an effort to provide a companion
-                    based, lifestyle improvement application. This is based on a
-                    tamagotchi effect where an emotional attachment is built
-                    with a digital pet and every positive or negative habit the
-                    user does influences the state of the pet.
-                  </p>
-                  <a
-                    href="https://github.com/kkjasoncheung/better-buddy-api"
-                    class="waves-effect waves-light btn"
-                    >See it on GitHub</a
-                  >
-                </div>
-              </div>
-            </div>
-            <br />
-            <!-- Project Card -->
-            <div class="row project">
-              <div class="col s12 l4">
-                <img class="logo" src="images/icon/hack_the_north.png" />
-              </div>
-              <div class="col s12 l8">
-                <div class="project-description">
-                  <a href="">
-                    <h5>
-                      Hack The North 2017
-                    </h5>
-                  </a>
-                  <p class="project-title">
-                    doofieBot
-                  </p>
-                  <p>
-                    This project was built using IBM Watson's Visual Recognition
-                    API, Python, Flask and Slack SDK. doofieBot was inspired by
-                    the fear of missing out on good food. What happens if your
-                    friend sends you a picture of a particularly good meal they
-                    had, and you start craving it too? By intelligently
-                    identifying the food and harnessing the power of restaurant
-                    analytics API, a single command,
-                    <span class="code">/doof</span>, will recommend relevant
-                    restaurants within your vicinity.
-                  </p>
-                  <a
-                    href="https://devpost.com/software/doofiebot"
-                    class="waves-effect waves-light btn"
-                    >See it on DevPost</a
-                  >
-                </div>
-              </div>
-            </div>
-            <br />
-            <!-- Project Card -->
-            <div class="row project">
-              <div class="col s12 l4">
-                <img class="logo" src="images/icon/ec_hacks.png" />
-              </div>
-              <div class="col s12 l8">
-                <div class="project-description">
-                  <a href="">
-                    <h5>
-                      Electric City Hacks 2016
-                    </h5>
-                  </a>
-                  <p class="project-title">
-                    Farm Radar
-                  </p>
-                  <p id="award-phrase">
-                    Achieved 3rd Place and SAP Innovation award.
-                  </p>
-                  <p>
-                    This project was built with Arduino, Sinatra, Ruby and the
-                    Dashing Framework. Farm Radar is a modular remote sensing
-                    system that scans agricultural and environmental data and
-                    gives real time feedback. The inspiration for this project
-                    started after reading about big data in Agri-tech and the
-                    use of drones in the farm management system. What if by
-                    using modular ground level sensors we could also easily
-                    assess the quality of the farmland at the current time and
-                    also be able to monitor long and short term trends? This
-                    will also allow us to cross check with drone imaging and all
-                    together create a big data warehouse which could give a lot
-                    of information to users.
-                  </p>
-                  <a
-                    href="https://devpost.com/software/farm-radar"
-                    class="waves-effect waves-light btn"
-                    >See it on DevPost</a
-                  >
-                </div>
-              </div>
-            </div>
-            <br />
-            <h5>
-              Feel free to check out more of my projects on
-              <a href="https://github.com/kkjasoncheung">GitHub!</a>
-            </h5>
-            <br />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="food-row">
       <br />
-      <div class="row">
-        <div class="container">
-          <div class="col s12 center" id="food-title-div">
-            <h5 class="row-title">Some food I love 😍🍣🥗🍰</h5>
-            <br />
-            <div class="row">
-              <div class="col s12 l4">
-                <img
-                  src="images/food/burger_spring_rolls.jpg"
-                  class="food-pic l4"
-                />
-                <p>Cheese Burger Spring Rolls</p>
-                <p>@ Lee Restaurant</p>
-              </div>
-              <div class="col s12 l4">
-                <img src="images/food/ice_cream.jpg" class="food-pic" />
-                <p>Cookie Monster Ice Cream</p>
-                <p>@ Fugo</p>
-              </div>
-              <div class="col s12 l4">
-                <img src="images/food/lee_salad.jpg" class="food-pic" />
-                <p>Signature Singaporian-Style Slaw</p>
-                <p>@ Lee Restaurant</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row" id="contact-row">
       <br />
-      <div class="container center contact-container">
-        <h4>Contact</h4>
-        <h5>Got an idea? Let's get in touch!</h5>
-        <br />
-        <br />
-        <br />
-        <div class="row icon-row">
-          <div class="col s4">
-            <a href="https://www.linkedin.com/in/kkjasoncheung/">
-              <img src="images/icon/linkedin.png" id="linkedin-icon" />
-            </a>
+      <div class="row side-margin-row">
+        <div class="col-md-6 col-sm-12" id="c1">
+          <div id="msft-card" class="card">
+            <img src="images/icon/msft.png" class="card-logo" />
+            <h2 class="card-title">Microsoft</h2>
+            <p class="card-description">Internal Tools & Applications</p>
+            <p class="card-description">Incoming Software Engineer</p>
           </div>
-          <div class="col s4">
-            <a href="https://github.com/kkjasoncheung">
-              <img src="images/icon/github-icon.svg" id="github-icon" />
-            </a>
-          </div>
-          <div class="col s4">
-            <a href="mailto:kkjason.cheung@mail.utoronto.ca">
-              <i class="medium material-icons" id="email-icon">email</i>
-            </a>
+        </div>
+        <div class="col-md-6 col-sm-12" id="c2">
+          <div id="google-card" class="card">
+            <img src="images/icon/google.png" class="card-logo" />
+            <h2 class="card-title">Google</h2>
+            <p class="card-description">Google Cloud</p>
+            <p class="card-description">
+              Technical Solutions Consultant Intern
+            </p>
+            <p class="card-description">
+              Summer 2019
+            </p>
           </div>
         </div>
       </div>
     </div>
-
-    <script type="text/javascript">
-      function alternateHeroText() {
-        // Define the introduction text
-        const phrases = [
-          "I'm a Software Engineer 👨🏼‍💻",
-          "I'm a Teacher 👨🏼‍🏫📝",
-          "I'm a Foodie 😍🍣🥗🍰",
-          "I'm a Problem Solver 🧩"
-        ];
-
-        var i = 0;
-        setInterval(function() {
-          $("#hero-text").fadeOut("slow", function() {
-            $("#hero-text").text(phrases[i]);
-            $("#hero-text").fadeIn("slow");
-          });
-          if (i == phrases.length - 1) {
-            i = 0;
-          } else {
-            i += 1;
-          }
-        }, 3000);
-      }
-
-      alternateHeroText();
-    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
