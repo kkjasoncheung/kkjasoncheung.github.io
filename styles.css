@@ -5,7 +5,6 @@ body {
 
 /* Container 1 Styles */
 #container1 {
-  border: 1px solid red;
   min-height: 100vh;
 }
 
