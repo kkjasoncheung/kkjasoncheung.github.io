@@ -1,6 +1,6 @@
 body {
   font-family: "Heebo", sans-serif;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9 !important;
 }
 
 /* Container 1 Styles */
@@ -9,23 +9,27 @@ body {
 }
 
 #headlines-container {
-  padding-top: 75px;
+  padding-bottom: 35px;
+  padding-left: 30%;
 }
 
 #headline {
   text-align: left;
-  max-width: 500px;
+  max-width: 550px;
   margin-top: 50px;
   display: inline-block;
   font-weight: 600;
   letter-spacing: -1px;
+  font-size: 50px;
+  line-height: 1.1em;
 }
 
 .side-margin-row {
   margin: 0 30% 0 30%;
 }
 
-#msft-card {
+#msft-card,
+#intersect-card {
   display: inline-block;
 }
 
@@ -48,13 +52,17 @@ body {
   padding-left: 20px;
 }
 
+.row {
+  padding: 40px 40px 0 40px;
+}
+
 /* Card styles */
 .card {
-  padding: 60px;
+  padding: 45px 50px;
   text-align: left;
   border-color: white !important;
-  height: 320px;
-  width: 450px;
+  height: 300px;
+  width: 430px;
   box-shadow: 7px 7px 25px #cdcccc;
   border-radius: 10px !important;
 }
@@ -64,15 +72,20 @@ body {
 }
 
 .card-logo {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   margin-bottom: 15px;
 }
 
 .card-description {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   padding: 0;
   margin: 0;
   color: #7b7b80;
+}
+
+#intersect-logo {
+  width: 115px;
+  height: 70px;
 }
