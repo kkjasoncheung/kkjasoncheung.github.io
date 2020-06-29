@@ -1,4 +1,10 @@
-var cards = ["msft-card", "google-card", "intersect-card", "ix-card"];
+var cards = [
+  "msft-card",
+  "google-card",
+  "intersect-card",
+  "ix-card",
+  "education-card",
+];
 
 for (let i = 0; i < cards.length; i++) {
   var card = cards[i];
